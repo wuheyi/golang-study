@@ -84,6 +84,14 @@ func main() {
 
 	fmt.Printf("hello world! %v %s\n" , sum, "aaa")
 	fmt.Print("Hello:", 23)
+
+	arr := [10]int{1,2,3}
+	for i,v := range arr {
+		fmt.Println(i, v)
+	}
+
+
+
 }
 
 /*
