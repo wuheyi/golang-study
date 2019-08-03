@@ -8,6 +8,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/phachon/go-logger"
 	"os"
 )
 
@@ -74,6 +75,11 @@ var (
 main mian函数
  */
 func main() {
+
+	logger := go_logger.NewLogger()
+
+	logger.Info("this is a info log!")
+	logger.Errorf("this is a error %s log!", "format")
 
 	sum := Sum(1, 2)
 	hostname, error := os.Hostname()
