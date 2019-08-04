@@ -5,6 +5,7 @@ import (
 	"reflect"
 )
 
+
 type struct1 struct {
 	i1  int
 	f1  float32
