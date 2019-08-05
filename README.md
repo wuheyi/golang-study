@@ -75,4 +75,8 @@ https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md
 * 可以通过空接口实现重载
 * 当一个类型包含（内嵌）另一个类型（实现了一个或多个接口）的指针时，这个类型就可以使用（另一个类型）所有的接口方法
 * 通过空接口和类型判断可以实现泛型
+* os 包中有一个 string 类型的切片变量 os.Args，用来处理一些基本的命令行参数，它在程序启动后读取命令行输入的参数 
+* recover 只能在 defer 修饰的函数（参见 6.4 节）中使用：用于取得 panic 调用中传递过来的错误值，如果是正常执行，调用 recover 会返回 nil，且没有其它效果。
+* 在包内部，总是应该从 panic 中 recover：不允许显式的超出包范围的 panic()
+* 向包的调用者返回错误值（而不是 panic）
 * 
